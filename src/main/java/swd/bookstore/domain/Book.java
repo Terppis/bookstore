@@ -1,5 +1,8 @@
 package swd.bookstore.domain;
 
+import javax.persistence.Entity;
+
+@Entity
 public class Book {
 	private String title;
 	private String author;

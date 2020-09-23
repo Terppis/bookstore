@@ -22,6 +22,6 @@ public class BookController {
 		books.add(new Book("Harry Potter ja salaisuuksien kammio ", "J.K Rowling ", 1998, "192391239 ", 15.00));
 		System.out.println(books);
 		model.addAttribute("books", books);
-		return "bookstore";
+		return "booklist";
 	}
 }
