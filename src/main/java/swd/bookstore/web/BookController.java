@@ -48,11 +48,8 @@ public class BookController {
 	public String editBook(@PathVariable("id") Long bookId, Model model){
 		model.addAttribute("book", repository.findById(bookId));
 		
-		return "editbook";
-		
+		return "editbook";	
 	}
 	
-	
-	
-	
+		
 }

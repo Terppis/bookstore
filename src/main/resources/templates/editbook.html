@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Bookstore</title>
+    <meta charset="UTF-8">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	 <link rel="stylesheet" href="/main.css">
+</head>
+<body>
+<h1> Book edit </h1>
+<div class="editbook">
+<form th:object="${book}" action="#" th:action="@{/save}" method="post">
+
+        <label class="header"> </label>
+        <input type="hidden" class="form-control" id="id" th:field="*{id}"/>
+
+        <label class="header">Title </label>
+        <input type="text" class="form-control" id="title" th:field="*{title}">
+
+        <label class="header">Author </label>
+        <input id="author" class="form-control" th:field="*{author}">
+
+        <label class="header">Year </label>
+        <input id="year" class="form-control" th:field="*{year}">
+    
+        <label class="header">Isbn </label>
+        <input id="isbn" class="form-control" th:field="*{isbn}">
+    
+        <label class="header">Price </label>
+        <input id="price" class="form-control" th:field="*{price}">
+        <br>
+
+
+        <input type="reset" class="form-control" value="Reset"/>
+        <br>
+        <input type="submit" class="form-control" value="save changes"/>
+        <br>
+        <div class="clear"></div>
+        
+</form>
+</div>
+</body>
+</html>

@@ -1,0 +1,49 @@
+body {
+	background-color: rgb(49, 48, 54);
+}
+
+table {
+	margin: auto;
+    text-align: center;
+    max-width: 850px;
+}
+
+h1 {
+	color: white;
+	text-align: center;
+}
+label {
+    color: rgb(189, 131, 24);
+    margin: auto;
+}
+
+input {
+	width: 300px;
+}
+
+form {
+	width: 50%;
+    margin: auto;
+}
+
+.buttons {
+    text-decoration: none;
+    color: rgb(189, 131, 24);
+}
+
+.buttons:hover {
+    text-decoration: none;
+    color: white;
+}
+
+.newbutton {
+    text-decoration: none;
+    color: rgb(189, 131, 24);
+    font-size: 120%;
+    
+}
+
+.newbutton:hover {
+    color: white;
+    text-decoration: none;
+}
