@@ -15,6 +15,7 @@
 		<th> Year <th>
 		<th> Isbn <th>
 		<th> Price<th>
+		<th> Category <th>
 	</tr>
 		
 		<tr th:each= "book : ${books}">
@@ -27,6 +28,8 @@
 		<td th:text="${book.getIsbn()}"> Isbn</td>
 		<td> </td>
 		<td th:text="${book.getPrice()}"> Price</td>
+		<td> </td>
+		<td th:text="${book.category.name}"> Name</td>
 		<td> </td>
 		<td><a class= "buttons" th:href="@{/delete/{id}(id=${book.id})}"> Delete </a></td>
 		<td> <a class= "buttons" th:href="@{/edit/{id}(id=${book.id})}"> Edit </a></td>
