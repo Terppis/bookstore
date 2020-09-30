@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Bookstore</title>
+    <meta charset="UTF-8">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/main.css">
+</head>
+<body>
+<h1>Categories</h1>
+<table class="table table-dark">
+	<tr> 
+		<th> Name <th>
+		
+	</tr>
+		<tr th:each= "category : ${categories}">
+		<td th:text="${category.getName()}"> Name </td>
+		<td> </td>
+	</tr>
+</table>
+<a class= "newbutton" href="/create"> New category </a>
+
+</body>
+</html>
