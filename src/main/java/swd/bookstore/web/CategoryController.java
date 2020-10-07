@@ -8,6 +8,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -39,6 +40,13 @@ public class CategoryController {
     public @ResponseBody Optional<Category> findCategoryRest(@PathVariable("id") Long categoryId) {	
     	return repository.findById(categoryId);
     } 
+    
+    // RESTful service to save new category
+    @RequestMapping(value="/categories", method = RequestMethod.POST)
+    public @ResponseBody Category saveCategoryRest(@RequestBody Category category) {	
+    	return repository.save(category);
+    }
+    
 	@RequestMapping(value = "/create", method = RequestMethod.GET)
 	public String createCategory(Model model) {
 		model.addAttribute("category", new Category());
@@ -54,4 +62,5 @@ public class CategoryController {
 	    return "redirect:categorylist";
 	    
 	}
+	
 }

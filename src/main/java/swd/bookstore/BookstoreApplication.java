@@ -33,8 +33,8 @@ public class BookstoreApplication {
 			categoryRepository.save(category5);
 			
 			
-			bookRepository.save(new Book (null, "Harry Potter ja salaisuuksien kammio", "J. K. Rowling", 1998, null, 0, category1));
-			bookRepository.save(new Book (null, "Tuntematon Kimi Räikkönen", "Kari Hotakainen", 2018, null, 0, category3 ));
+			bookRepository.save(new Book (null, "Harry Potter ja salaisuuksien kammio", "J. K. Rowling", 1998, "123-325-56-12", 12.99, category1));
+			bookRepository.save(new Book (null, "Tuntematon Kimi Räikkönen", "Kari Hotakainen", 2018, "123-12-512-123", 14.99, category3 ));
 				
 		};
 	
