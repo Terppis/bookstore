@@ -12,6 +12,12 @@ h1 {
 	color: white;
 	text-align: center;
 }
+
+h2 {
+	color: white;
+	text-align: center;
+}
+
 label {
     color: rgb(189, 131, 24);
     margin: auto;

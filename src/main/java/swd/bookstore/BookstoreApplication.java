@@ -37,6 +37,8 @@ public class BookstoreApplication {
 			bookRepository.save(new Book (null, "Tuntematon Kimi Räikkönen", "Kari Hotakainen", 2018, "123-12-512-123", 14.99, category3 ));
 				
 		};
+		
+		
 	
 	
 			
