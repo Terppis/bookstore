@@ -48,7 +48,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 	public CommandLineRunner userdemo(UserRepository userRepository) {
 		return (args) -> {
 			
-			User user1= new User("teemu", "$2a$10$98WpMIwDT1Q1hJDuoC7EXu3lTyUeyKjXDuwJXaA3EoNo/Es4zlwLG", "testi.teemu@gmail.com", "ADMIN");
+			User user1= new User("teemu", "$2a$10$3Ub.uR3Ch.HCJCturDXOpOouV6tgVODSCjHwfWFA1BeQy2Dnx.M1m", "testi.teemu@gmail.com", "ADMIN");
 			User user2= new User("matti", "$2a$10$o7LOKuTBLObZuqX/a55ZLeWaDzvOTjRvI2tr8w7mc6ke89PvsBfme" ,"testi.matti@gmail.com", "USER");
 			User user3= new User("liisa", "$2a$10$.PZPUSOruRZ2zxvcJ5yBZ.d4ABn/SqPfGFMpT2mnmdHkbhAF5D.02", "testi.liisa@gmail.com", "USER");
 			userRepository.save(user1);
